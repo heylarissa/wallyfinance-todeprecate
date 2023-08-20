@@ -5,11 +5,14 @@ Wally Finance is a comprehensive personal finance management app designed to hel
 
 ## Features
 
-- [ ] Authentication: Log in to your secure account to access your personal financial information.
+- [ ] Google Authentication: Log in to your secure account to access your personal financial information.
 - [ ] Bank Integration (Nubank): Connect your bank accounts for automatic import of financial transactions.
 - [ ] Cloud Sync: Keep your data synchronized across all your devices for convenient access.
 - [ ] Expense Tracking: Record your expenses and incomes in a simple and organized manner.
 - [ ] Budget Planning: Create personalized budgets for expense categories and track your progress.
+<!--Limite de gastos por categoria, considerando entradas mensais e perfil do usuário
+Divisão de valores, quando for um casal ou família, o que delimita os gastos de cada usuário
+ --> 
 - [ ] Bank Account Integration: Access your bank information directly in the app for a complete financial view.
 - [ ] Custom Categories: Create customized categories for your expenses, tailoring the app to your needs.
 - [ ] Reports and Charts: Generate detailed reports and visual charts for analyzing your financial habits.
@@ -21,8 +24,9 @@ Wally Finance is a comprehensive personal finance management app designed to hel
 - [ ] Expense Splitting: Simplify the splitting of shared expenses, such as rent or utility bills.
 - [ ] Shared Shopping List: Maintain a shared shopping list with your family or housemates.
 - [ ] Shared Transaction History: Log shared transactions for a clear view of joint expenses.
+<!-- Permitir que consiga mudar o dono da transação (independente de quem é o cartão)
+O dono da transação não é o dono da despesa -->
 - [ ] Receipt Scanner: Scan and attach receipts and invoices for effective organization.
-- [ ] Guest Access: Share limited access to your finances with consultants or business partners.
 - [ ] Financial Asset Tracking: Track investments, stocks, and other important financial assets.
 - [ ] Document Attachments: Attach important documents, such as contracts and receipts, to corresponding transactions.
 
