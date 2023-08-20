@@ -4,7 +4,6 @@ import { useCounterStore } from '@/stores/index.js';
 
 const store = useCounterStore()
 
-store.count = 0
 
 
 </script>
