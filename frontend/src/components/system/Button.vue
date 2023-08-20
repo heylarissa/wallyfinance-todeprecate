@@ -10,4 +10,4 @@ const props = defineProps({ text: String, url: String })
   </a>
 </template>
 
-<style></style>
+<style scoped></style>

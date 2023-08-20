@@ -1,8 +1,7 @@
 <script setup></script>
 
 <template>
-<h1>wally</h1>
+  <h1>wally</h1>
 </template>
 
-<style>
-</style>
+<style></style>

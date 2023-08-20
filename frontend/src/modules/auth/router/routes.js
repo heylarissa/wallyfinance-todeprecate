@@ -1,9 +1,12 @@
+import AuthView from '@/modules/auth/views/AuthView.vue'
+import LoginView from '@/modules/auth/views/LoginView.vue'
+
 const authRoutes = [
   {
     path: '/',
-    name: 'auth',
-    component: () => import('@/modules/auth/AuthView.vue'),
-    title: 'auth',
+    name: '',
+    component: AuthView,
+    title: '',
     redirect: { name: 'login' },
     children: [
       {
@@ -14,7 +17,7 @@ const authRoutes = [
       {
         path: '/login',
         name: 'login',
-        component: () => import('@/modules/auth/LoginView.vue')
+        component: LoginView
       },
       {
         path: '/logout',
@@ -25,4 +28,4 @@ const authRoutes = [
   }
 ]
 
-export default authRoutes;
+export default authRoutes
