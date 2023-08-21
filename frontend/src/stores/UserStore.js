@@ -11,7 +11,17 @@ const useUsersStore = defineStore('userStore', {
   getters: {
     async authenticate(login, password) {
       try {
-        this.userData = login + password // envia requisição para o server
+        var formdata = new FormData()
+        formdata.append('username', login)
+        formdata.append('password', password)
+      
+        var requestOptions = {
+          method: 'POST',
+          body: formdata,
+          redirect: 'follow'
+        }
+
+        this.userData = fetch('http://127.0.0.1:8000/jwt/create/', requestOptions) // envia requisição para o server
         alert(`Welcome back ${this.userData.first_name}!`)
       } catch (error) {
         alert(error)
@@ -25,3 +35,5 @@ const useUsersStore = defineStore('userStore', {
   },
   persist: true
 })
+
+export default useUsersStore

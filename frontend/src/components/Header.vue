@@ -1,6 +1,10 @@
 <script setup>
 import Logo from '@/components/system/Logo.vue'
 import { RouterLink } from 'vue-router'
+
+import useUsersStore from '@/stores/UserStore.js'
+
+const userStore = useUsersStore()
 </script>
 
 <template>
@@ -13,7 +17,10 @@ import { RouterLink } from 'vue-router'
     // se nao
         // Login
         // register-->
-    <RouterLink to="/login">Login</RouterLink>
+
+    {{ userStore.userData }}
+
+    <RouterLink :v-show="userStore.isAuthenticated" to="/login">Login</RouterLink>
   </header>
 </template>
 
