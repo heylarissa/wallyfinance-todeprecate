@@ -6,11 +6,9 @@ const userStore = useUsersStore()
 <template>
   <main>
     <h1>Login</h1>
-    <form method="POST" action="/">
-      <input type="mail" label="Email" />
-      <input type="password" label="Senha" />
-      <button @click="userStore.authenticate()">Login</button>
-    </form>
+    <input type="mail" label="Email" />
+    <input type="password" label="Senha" />
+    <button @click="userStore.authenticate('larissa', '123')">Login</button>
   </main>
 </template>
 

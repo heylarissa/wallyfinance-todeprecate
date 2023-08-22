@@ -7,22 +7,21 @@ const useUsersStore = defineStore('userStore', {
       userData: null
     }
   },
-  actions: {},
-  getters: {
+  actions: {
     async authenticate(login, password) {
       try {
         var formdata = new FormData()
         formdata.append('username', login)
         formdata.append('password', password)
-      
+
         var requestOptions = {
           method: 'POST',
           body: formdata,
           redirect: 'follow'
         }
 
-        this.userData = fetch('http://127.0.0.1:8000/jwt/create/', requestOptions) // envia requisição para o server
-        alert(`Welcome back ${this.userData.first_name}!`)
+        const response = await fetch('http://127.0.0.1:8000/jwt/create/', requestOptions) // envia requisição para o server
+        this.userData = await response.json()
       } catch (error) {
         alert(error)
       }
@@ -33,6 +32,7 @@ const useUsersStore = defineStore('userStore', {
       this.userData = null
     }
   },
+  getters: {},
   persist: true
 })
 

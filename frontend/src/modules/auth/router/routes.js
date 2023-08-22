@@ -5,7 +5,7 @@ const authRoutes = [
   {
     path: '/',
     name: '',
-    component: AuthView,
+    component: LoginView,
     title: '',
     redirect: { name: 'login' },
     children: [
