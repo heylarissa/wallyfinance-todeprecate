@@ -37,3 +37,9 @@ This project is actively under development and welcomes contributions from the c
 This project is licensed under the [GNU General Public License (GNU GPL)](https://www.gnu.org/licenses/gpl-3.0.html) version 3.0 or later.
 
 You can find a complete copy of the license in the [LICENSE](LICENSE) file.
+
+
+# SETUP
+
+### Backend
+sudo apt install python3-pip python3-dev libpq-dev postgresql postgresql-contrib
