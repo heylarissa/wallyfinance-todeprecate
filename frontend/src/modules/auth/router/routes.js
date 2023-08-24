@@ -12,7 +12,7 @@ const authRoutes = [
       {
         path: '/register',
         name: 'register',
-        component: () => import('@/modules/auth/RegisterView.vue')
+        component: () => import('@/modules/auth/views/RegisterView.vue')
       },
       {
         path: '/login',
@@ -22,7 +22,7 @@ const authRoutes = [
       {
         path: '/logout',
         name: 'logout',
-        component: () => import('@/modules/auth/LogoutView.vue')
+        component: () => import('@/modules/auth/views/LogoutView.vue')
       }
     ]
   }

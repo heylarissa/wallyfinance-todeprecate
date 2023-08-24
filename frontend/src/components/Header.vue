@@ -20,8 +20,10 @@ const userStore = useUsersStore()
 
     {{ userStore.userData }}
 
-    <RouterLink :v-show="userStore.isAuthenticated" to="/login">Login</RouterLink>
+    <RouterLink :v-show="!userStore.isAuthenticated" to="/login">Login</RouterLink>
   </header>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>
